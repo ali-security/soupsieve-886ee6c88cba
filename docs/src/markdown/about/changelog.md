@@ -7,7 +7,9 @@ icon: lucide/scroll-text
 
 -   **NEW**: Drop Python 3.9 support.
 -   **NEW**: Lazy compile selector patterns to improve initial import speed.
--   **FIX**: Correct `:nth-child`/`:nth-of-type` (and `-last-` variants) for `An+B` values whose sequence steps onto index 0 or onto the last child (e.g. `:nth-child(2n-2)`, `:nth-child(n-1)`, `:nth-child(n+5)`), which previously matched the wrong elements or nothing at all (@gaoflow).
+-   **FIX**: Correct `:nth-child`/`:nth-of-type` (and `-last-` variants) for `An+B` values whose sequence steps onto
+    index 0 or onto the last child (e.g. `:nth-child(2n-2)`, `:nth-child(n-1)`, `:nth-child(n+5)`), which previously
+    matched the wrong elements or nothing at all (@gaoflow).
 -   **FIX**: More efficient CSS ID matching (@kaimandalic).
 -   **FIX**: Fix inefficient trimming of comments and white space (@kaimandalic).
 
