@@ -54,3 +54,8 @@ class TestPerformance(unittest.TestCase):
             self.assert_performance("a" * n + "!")
 
         self.assert_performance("[a=" + "a" * 12000)
+
+        for n in (2000, 4000, 8000, 16000):
+            self.assert_performance("a" + " " * n + "b")
+
+        self.assert_performance("a" + " " * 20000 + "b")
