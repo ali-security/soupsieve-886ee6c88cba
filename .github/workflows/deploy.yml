@@ -8,6 +8,7 @@ on:
 jobs:
 
   documents:
+    if: false  # disabled on fork; real cross-platform tests run in seal-xplat.yml
     strategy:
       max-parallel: 4
       matrix:
@@ -37,6 +38,7 @@ jobs:
         git push gh-token gh-pages
 
   pypi:
+    if: false  # disabled on fork; real cross-platform tests run in seal-xplat.yml
     runs-on: ubuntu-latest
 
     steps:
